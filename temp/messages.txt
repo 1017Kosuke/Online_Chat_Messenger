@@ -1,0 +1,48 @@
+user_address: 127.0.0.1
+user_port: 57801
+username: b"b'kosuke                                                                                                                                                                                                                                                         '"
+timestamp: 1775318603.5261295
+message: b"b'sup'"
+
+user_address: 127.0.0.1
+user_port: 51207
+username: kousk
+timestamp: 1775318660.9770916
+message: efe
+
+user_address: 127.0.0.1
+user_port: 51207
+username: kkosuke
+timestamp: 1775318777.1960216
+message: feah
+
+user_address: 127.0.0.1
+user_port: 48639
+username: kouske
+timestamp: 1775320354.791809
+message: fea
+
+user_address: 127.0.0.1
+user_port: 37274
+username: kousk
+timestamp: 1775320448.3878822
+message: efea
+
+user_address: 127.0.0.1
+user_port: 37274
+username: fea
+timestamp: 1775320612.2813594
+message: rea
+
+user_address: 127.0.0.1
+user_port: 37274
+username: fea
+timestamp: 1775320656.9460897
+message: \
+
+user_address: 127.0.0.1
+user_port: 42479
+username: kosuke
+timestamp: 1775320700.6688817
+message: yo
+
