@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; script-src 'self'; style-src 'self'"
+  />
+  <link rel="stylesheet" href="./style.css" />
+  <title>This is Messenger App!</title>
+</head>
+
+<body>
+  <main class="container">
+    <section class="card header">
+      <h1>Local TCP JSON Messenger</h1>
+      <p>Send JSON messages from Electron to a Python TCP server.</p>
+    </section>
+
+    <section class="card">
+      <h2>Room Operation</h2>
+
+      <label>Operation</label>
+      <select id="operation">
+        <option value="create">Create Room</option>
+        <option value="join">Join Room</option>
+      </select>
+
+      <div id="createFields">
+        <label>Room Name</label>
+        <input id="createRoomName" placeholder="Enter room name" />
+
+        <label>Password</label>
+        <input id="createPassword" placeholder="Enter password" type="password" />
+      </div>
+
+      <div id="joinFields" class="hidden">
+        <label>Room Key</label>
+        <input id="joinKey" placeholder="Enter shared room key" />
+
+        <label>Username</label>
+        <input id="username" placeholder="Enter username" />
+      </div>
+
+      <button id="sendBtn">Send Request</button>
+    </section>
+
+    <section class="card">
+      <h2>JSON Preview</h2>
+      <pre id="jsonPreview">Waiting...</pre>
+    </section>
+
+    <section class="card">
+      <h2>Server Response</h2>
+      <pre id="response">No response yet.</pre>
+    </section>
+    <section id="chatSection" class="card hidden">
+        <h2>Chat Room</h2>
+
+        <p id="currentRoomInfo">Not joined yet.</p>
+
+        <label>Message</label>
+        <textarea id="chatMessage" placeholder="Type your message..."></textarea>
+
+        <button id="sendMessageBtn">Send Message</button>
+
+        <h3>Chat Log</h3>
+        <pre id="chatLog">No messages yet.</pre>
+        </section>
+  </main>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h2>Room Created Successfully</h2>
+      <p>Share this key with other users.</p>
+
+      <input id="createdKey" readonly />
+
+      <button id="copyKeyBtn">Copy Key</button>
+      <button id="closePopupBtn">Close</button>
+    </div>
+  </div>
+
+  <script src="./renderer.js"></script>
+</body>
+</html>
