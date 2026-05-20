@@ -3,6 +3,8 @@
 ## Overview
 This repository contains three sample implementations of a local chat messenger system.  
 The project was created to learn socket programming, TCP/UDP communication, Electron frontend integration, and JSON-based message exchange.
+<img width="1508" height="860" alt="{A32039AF-ED1B-4D49-BABA-F550B816BEBD}" src="https://github.com/user-attachments/assets/34bcf1af-499d-40f2-a0b6-1ad0e143d40f" />
+
 
 ## Samples
 
@@ -73,6 +75,9 @@ Users can create a room using:
 - Password
 
 The frontend automatically generates a UUID room key.
+The user can copy its auto-generated Key which is UUID by clicking "Copy Key"
+<img width="924" height="703" alt="{6F63F2BB-B0DD-4426-8484-AC2B689EFFDA}" src="https://github.com/user-attachments/assets/c234c005-a6f2-4acb-b2fc-28324a1fb060" />
+
 
 Example payload:
 
@@ -132,6 +137,10 @@ Example payload:
 
 The server stores the message and updates chat history.
 
+Sample Image:
+<img width="937" height="439" alt="{B95DA944-667C-4028-96A3-13FD90975975}" src="https://github.com/user-attachments/assets/38173eb9-7ea3-4b75-913d-5426fe9d1c75" />
+
+
 ---
 
 ## 4. Message History Retrieval
@@ -146,6 +155,11 @@ The client can request previous messages using:
 ```
 
 The server filters messages by room key and returns the room history.
+
+Sample Image:
+<img width="1021" height="673" alt="{0616E641-7563-44C2-A3A8-A987FFC42C5A}" src="https://github.com/user-attachments/assets/90115c43-f79a-4797-aff6-fadb6be9f0bc" />
+
+
 
 Example response:
 
