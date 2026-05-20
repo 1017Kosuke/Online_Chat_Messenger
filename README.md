@@ -103,7 +103,7 @@ Example payload:
 {
   "operation": "JOIN",
   "key": "shared-room-key",
-  "username": "Yu"
+  "username": "Test"
 }
 ```
 
@@ -154,7 +154,7 @@ Example response:
   "status": "success",
   "history": [
     {
-      "username": "Yu",
+      "username": "Test",
       "message": "Hello"
     },
     {
@@ -188,7 +188,7 @@ Example:
   "payload": {
     "operation": "MESSAGE",
     "key": "room-key",
-    "username": "Yu",
+    "username": "Test_name",
     "message": "Hello"
   }
 }
