@@ -130,7 +130,7 @@ Example payload:
 {
   "operation": "MESSAGE",
   "key": "shared-room-key",
-  "username": "Yu",
+  "username": "Test_Name",
   "message": "Hello everyone"
 }
 ```
